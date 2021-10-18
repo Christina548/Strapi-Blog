@@ -49,6 +49,13 @@ strapi:
             permalink: /articles/:slug/
             layout: article.html
             output: true
+        categories:
+            # Collection name (optional). Used to construct the url requested. Example: type `foo` would generate the following url `http://localhost:1337/foo`.
+            type: categories
+            permalink: /categories/:name
+            layout: category.html
+            # Generate output files or not (default: false)
+            output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

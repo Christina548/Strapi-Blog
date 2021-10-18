@@ -13,6 +13,10 @@ layout: default
                 <a class="article-link" href="/articles{{ article.slug | relative_url }}">
                     {{ article.title }}
                 </a>
+                -
+                <a href="/categories/{{ article.category.name | realtive_url }}">
+                  ({{ article.category.name}})
+                </a>
             </h3>
             <!-- Display an excerpt of the article -->
             <p>{{ article.content | markdownify | strip_html | truncatewords: 10 }}</p>
