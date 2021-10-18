@@ -46,6 +46,9 @@ strapi:
         articles:
             # Collection name (optional). Used to construct the url requested. Example: type `foo` would generate the following url `http://localhost:1337/foo`.
             type: articles
+            permalink: /articles/:slug/
+            layout: article.html
+            output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
